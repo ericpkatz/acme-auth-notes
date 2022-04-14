@@ -11,6 +11,9 @@ jobs:
     docker:
       - image: cimg/node:15.1
       - image: cimg/postgres:14.0
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle-test_test
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
